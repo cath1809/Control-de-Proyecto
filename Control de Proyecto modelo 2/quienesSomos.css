@@ -1,0 +1,319 @@
+:root {
+    --accent-color: #198754;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --medical-teal: #20c997;
+    --medical-white: #ffffff;
+    --medical-light-gray: #e9ecef;
+    --primary: #2a7fba;
+    --secondary: #1a5276;
+    --dark: #343a40;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--medical-light-gray);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    background: linear-gradient(135deg, var(--secondary), var(--medical-teal));
+    color: var(--medical-white);
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: var(--medical-white);
+    color: #1a5276; 
+    padding: 0.6rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--medical-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about-image2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.back-btn:hover {
+    background-color: transparent;
+    color: var(--medical-white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.section-title {
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.social-icons {
+    margin-bottom: 2rem;
+
+}
+.social-icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    font-size: 1.1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background-color: var(--medical-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 1.5rem;
+}
+
+.team-name {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin: 0 0 0.5rem 0;
+}
+
+.team-position {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+.hero {
+background-image: url(portada2.jpg);
+    color: white;
+    padding: 8rem 5% 5rem;
+    text-align: center;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.company-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .company-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--dark);
+    border-radius: 2px;
+  }
+
+
+    .section-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        padding: 2rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.organigrama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los niveles del organigrama */
+.nivel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Estilos para las tarjetas de empleados */
+.empleado {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin: 0 15px;
+    text-align: center;
+    width: 180px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.empleado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.empleado h3 {
+    margin: 0;
+    color: #3498db;
+    font-size: 16px;
+}
+
+.empleado p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Estilos para el director general (nivel superior) */
+.nivel-superior .empleado {
+    background-color: #3498db;
+    color: white;
+}
+
+.nivel-superior .empleado h3 {
+    color: white;
+}
+
+.nivel-superior .empleado p {
+    color: #ecf0f1;
+}
+
+/* Estilos para las líneas de conexión */
+.conexion {
+    position: relative;
+    height: 30px;
+    width: 2px;
+    background-color: #bdc3c7;
+    margin: 0 auto;
+}
+
+.conexion-horizontal {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #bdc3c7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nivel {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .empleado {
+        margin: 10px 0;
+    }
+    
+    .conexion {
+        height: 20px;
+        width: 2px;
+    }
+}
