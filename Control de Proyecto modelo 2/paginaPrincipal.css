@@ -512,7 +512,7 @@ footer {
     
 
     .cta-button {
-    font-size: 10px;
+    display: none;
 }
     
     .empleado {
